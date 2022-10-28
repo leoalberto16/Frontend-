@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class EducacionService {
-   URL= 'http://localhost:8080/educacion/';
+   URL= 'https://git.heroku.com/backendla.git/educacion/';
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Educacion[]>{

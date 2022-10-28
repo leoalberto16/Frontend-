@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-expURL= 'http://localhost:8080/explab/'
+expURL= 'https://git.heroku.com/backendla.git/explab/'
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,7 +21,7 @@ expURL= 'http://localhost:8080/explab/'
   }
 
   public save(experiencia: Experiencia): Observable<any>{
-    return this.httpClient.post<any>(this.expURL + 'crerate', experiencia);
+    return this.httpClient.post<any>(this.expURL + 'create', experiencia);
   }
 
   public update(id: number, experiencia:Experiencia): Observable<any>{
